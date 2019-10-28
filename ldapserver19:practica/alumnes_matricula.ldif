@@ -1,0 +1,22 @@
+dn: uid=manel,ou=usuaris,dc=edt,dc=org
+objectclass: inetOrgPerson
+objectclass: master
+cn: manel
+sn: manel
+uid: manel
+nom: manel
+descripcio: alumne numero 1 amb matricula
+matricula: 1
+web: www.escoladeltreball.org
+
+dn: uid=josep,ou=usuaris,dc=edt,dc=org
+objectclass: inetOrgPerson
+objectclass: master
+cn: josep
+sn: josep
+uid: josep
+nom: josep
+descripcio: alumne numero 2 amb matricula
+matricula: 2
+web: www.escoladeltreball.org
+
