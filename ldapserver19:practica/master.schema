@@ -1,31 +1,31 @@
 attributetype ( 1.1.2.1.1 NAME 'nom' 
-  DESC 'nom de l'estudiant'
+  DESC 'nom del estudiant'
   EQUALITY caseIgnoreMatch
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE )
 
-attributetype ( 1.1.2.1.1 NAME 'descripcio'
+attributetype ( 1.1.2.1.2 NAME 'descripcio'
   DESC 'informacio sobre el master'
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 
-attributetype ( 1.1.2.1.2 NAME 'matricula' 
-  DESC 'numero de matricula de l'estudiant'
+attributetype ( 1.1.2.1.3 NAME 'matricula' 
+  DESC 'numero de matricula del estudiant'
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE )
 
-attributetype ( 1.1.2.1.3 NAME 'web' 
+attributetype ( 1.1.2.1.4 NAME 'web' 
   DESC 'pagina web del estudiant amb master'
   EQUALITY caseExactMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 
-attributetype ( 1.1.2.1.4 NAME 'foto'  
-  DESC 'foto de l'estudiant amb master'
+attributetype ( 1.1.2.1.5 NAME 'foto'  
+  DESC 'foto del estudiant amb master'
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
 
 objectclass ( 1.1.2.2.1 NAME 'master' 
-  DESC 'futboleros'
-  SUP inetOrgPerson
+  DESC 'master'
+  SUP TOP
   AUXILIARY
   MUST ( nom $ matricula )
   MAY ( descripcio $ web $ foto ) )
