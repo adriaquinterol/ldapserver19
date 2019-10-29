@@ -1,8 +1,7 @@
-attributetype ( 1.1.2.1.1 NAME 'nom' 
+attributetype ( 1.1.2.1.1 NAME 'nota' 
   DESC 'nom del estudiant'
-  EQUALITY caseIgnoreMatch
-  SUBSTR caseIgnoreSubstringsMatch
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  EQUALITY numericStringMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.36
   SINGLE-VALUE )
 
 attributetype ( 1.1.2.1.2 NAME 'descripcio'
@@ -27,7 +26,7 @@ objectclass ( 1.1.2.2.1 NAME 'master'
   DESC 'master'
   SUP TOP
   AUXILIARY
-  MUST ( nom $ matricula )
+  MUST ( nota $ matricula )
   MAY ( descripcio $ web $ foto ) )
 
 
