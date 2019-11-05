@@ -4,7 +4,7 @@ objectclass: master
 cn: manel
 sn: manel
 uid: manel
-nom: manel
+nota: 11
 descripcio: alumne numero 1 amb matricula
 matricula: 1
 web: www.escoladeltreball.org
@@ -15,7 +15,7 @@ objectclass: master
 cn: josep
 sn: josep
 uid: josep
-nom: josep
+nota: 14
 descripcio: alumne numero 2 amb matricula
 matricula: 2
 web: www.escoladeltreball.org
