@@ -1,8 +1,4 @@
-# ldapserver19:base
-## ASIX M06-ASO @edt Curs 2019-2020
+# ldapserver19:schema
+## ASIX M06-ASO @adriaquintero Curs 2019-2020
 
-Servidor multi ldap, amb organització dc=edt,dc=org, 
-i també dc=em06,dc=cat
-
-
-
+Servidor schema ldap, amb organització dc=edt,dc=org
